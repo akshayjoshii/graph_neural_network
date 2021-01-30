@@ -6,6 +6,7 @@
     2. Graph (with my Custom Adj Matrix - default)
     3. Convolution
     4. Graph (with Gaussian Adj Matrix)
+    5. Graph (with Trainable Adj Matrix)
 
 ## Implementation of a Graph Neural Network (MNIST) with 3 different priors
 
@@ -21,13 +22,13 @@
     4. python graph_neural_network.py --model graph --pred_edge
     5. python graph_neural_network.py --model graph
 
-## Visualize Filter
+## Visualize Filters
 
 ### Sparse Filter
 
-    ![Sparse](images/sparse_filter.gif)
+![Sparse](images/sparse_filter.gif)
 
 
 ### Gaussian Filter
 
-    ![Gaussian](images/gaussian_filter.gif)
+![Gaussian](images/gaussian_filter.gif)
