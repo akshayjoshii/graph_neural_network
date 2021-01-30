@@ -23,8 +23,9 @@
 
 ## Visualize Filter
 
-1. Sparse Filter
-    ![Sparse](images\sparse_filter.gif)
+Sparse Filter:
+    ![Sparse](images/sparse_filter.gif)
 
-2. Gaussian Filter
-    ![Gaussian](images\gaussian_filter.gif)
+
+Gaussian Filter:
+    ![Gaussian](images/gaussian_filter.gif)

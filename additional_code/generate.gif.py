@@ -13,7 +13,7 @@ from graph_neural_network import BorisGraphNet
 def visualize_filter(A, filter_name):
     scale = 10
     img_list = []
-    cmap = mpl.cm.get_cmap('inferno')
+    cmap = mpl.cm.get_cmap('plasma')
     for i in np.arange(0, img_size, 4):  # for every row with step 4
         for j in np.arange(0, img_size, 4):  # for every col with step 4
             k = i * img_size + j
