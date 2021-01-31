@@ -1,0 +1,91 @@
+python fc_vs_graph_train.py --model graph_akshay
+
+-----Running Graph Model with Custom Adjacency Mtx & Predict Edge Flag set to False-----
+
+
+Model Configuration:
+ BorisGraphNet(
+  (fc): Linear(in_features=784, out_features=10, bias=False)
+)
+
+Number of trainable parameters: 7840
+
+Train Epoch: 1 [0/60000 (0%)]   Loss: 3.279419
+Train Epoch: 1 [12800/60000 (21%)]      Loss: 0.453761
+Train Epoch: 1 [25600/60000 (43%)]      Loss: 0.548028
+Train Epoch: 1 [38400/60000 (64%)]      Loss: 0.805246
+Train Epoch: 1 [51200/60000 (85%)]      Loss: 0.432884
+
+Test set: Average loss: 0.3273, Accuracy: 9070/10000 (91%)
+
+Train Epoch: 2 [0/60000 (0%)]   Loss: 0.260060
+Train Epoch: 2 [12800/60000 (21%)]      Loss: 0.316275
+Train Epoch: 2 [25600/60000 (43%)]      Loss: 0.471217
+Train Epoch: 2 [38400/60000 (64%)]      Loss: 0.192604
+Train Epoch: 2 [51200/60000 (85%)]      Loss: 0.200234
+
+Test set: Average loss: 0.3012, Accuracy: 9170/10000 (92%)
+
+Train Epoch: 3 [0/60000 (0%)]   Loss: 0.270355
+Train Epoch: 3 [12800/60000 (21%)]      Loss: 0.356785
+Train Epoch: 3 [25600/60000 (43%)]      Loss: 0.165488
+Train Epoch: 3 [38400/60000 (64%)]      Loss: 0.295377
+Train Epoch: 3 [51200/60000 (85%)]      Loss: 0.327524
+
+Test set: Average loss: 0.2924, Accuracy: 9166/10000 (92%)
+
+Train Epoch: 4 [0/60000 (0%)]   Loss: 0.272974
+Train Epoch: 4 [12800/60000 (21%)]      Loss: 0.423687
+Train Epoch: 4 [25600/60000 (43%)]      Loss: 0.552799
+Train Epoch: 4 [38400/60000 (64%)]      Loss: 0.217132
+Train Epoch: 4 [51200/60000 (85%)]      Loss: 0.402558
+
+Test set: Average loss: 0.2906, Accuracy: 9167/10000 (92%)
+
+Train Epoch: 5 [0/60000 (0%)]   Loss: 0.416546
+Train Epoch: 5 [12800/60000 (21%)]      Loss: 0.652266
+Train Epoch: 5 [25600/60000 (43%)]      Loss: 0.262252
+Train Epoch: 5 [38400/60000 (64%)]      Loss: 0.424345
+Train Epoch: 5 [51200/60000 (85%)]      Loss: 0.195836
+
+Test set: Average loss: 0.2838, Accuracy: 9190/10000 (92%)
+
+Train Epoch: 6 [0/60000 (0%)]   Loss: 0.252063
+Train Epoch: 6 [12800/60000 (21%)]      Loss: 0.186275
+Train Epoch: 6 [25600/60000 (43%)]      Loss: 0.268647
+Train Epoch: 6 [38400/60000 (64%)]      Loss: 0.195731
+Train Epoch: 6 [51200/60000 (85%)]      Loss: 0.319349
+
+Test set: Average loss: 0.2795, Accuracy: 9220/10000 (92%)
+
+Train Epoch: 7 [0/60000 (0%)]   Loss: 0.294858
+Train Epoch: 7 [12800/60000 (21%)]      Loss: 0.187243
+Train Epoch: 7 [25600/60000 (43%)]      Loss: 0.128384
+Train Epoch: 7 [38400/60000 (64%)]      Loss: 0.132768
+Train Epoch: 7 [51200/60000 (85%)]      Loss: 0.191912
+
+Test set: Average loss: 0.2805, Accuracy: 9212/10000 (92%)
+
+Train Epoch: 8 [0/60000 (0%)]   Loss: 0.235013
+Train Epoch: 8 [12800/60000 (21%)]      Loss: 0.385350
+Train Epoch: 8 [25600/60000 (43%)]      Loss: 0.198933
+Train Epoch: 8 [38400/60000 (64%)]      Loss: 0.259206
+Train Epoch: 8 [51200/60000 (85%)]      Loss: 0.347259
+
+Test set: Average loss: 0.2798, Accuracy: 9225/10000 (92%)
+
+Train Epoch: 9 [0/60000 (0%)]   Loss: 0.354996
+Train Epoch: 9 [12800/60000 (21%)]      Loss: 0.144992
+Train Epoch: 9 [25600/60000 (43%)]      Loss: 0.280650
+Train Epoch: 9 [38400/60000 (64%)]      Loss: 0.129078
+Train Epoch: 9 [51200/60000 (85%)]      Loss: 0.180491
+
+Test set: Average loss: 0.2781, Accuracy: 9196/10000 (92%)
+
+Train Epoch: 10 [0/60000 (0%)]  Loss: 0.269051
+Train Epoch: 10 [12800/60000 (21%)]     Loss: 0.274245
+Train Epoch: 10 [25600/60000 (43%)]     Loss: 0.372592
+Train Epoch: 10 [38400/60000 (64%)]     Loss: 0.187843
+Train Epoch: 10 [51200/60000 (85%)]     Loss: 0.093906
+
+Test set: Average loss: 0.2827, Accuracy: 9202/10000 (92%)
