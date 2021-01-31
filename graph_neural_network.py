@@ -85,14 +85,19 @@ class BorisGraphNet(nn.Module):
     # HMLAA Seminar Exercise Task -> My implementation
     @staticmethod
     def precompute_adjacency_images(img_size):
+        # Input graph of N nodes and unit length edges between them
         graph = nx.grid_2d_graph(img_size, img_size)
 
+        # Unit length adj matrix
         adj_mtx = nx.adjacency_matrix(graph)
 
+        # Input adjacency matrix is added to a sparse matrix which has ones on diagonal
         adj_mtx = adj_mtx + sp.eye(adj_mtx.shape[0])
 
-        D1 = np.array(adj_mtx.sum(axis=0))**(0.01)
-        D2 = np.array(adj_mtx.sum(axis=1))**(0.01)
+        D1 = np.array(adj_mtx.sum(axis=0))**(0.01)  # along columns
+        D2 = np.array(adj_mtx.sum(axis=1))**(0.01)  # along rows
+
+        # Create sparse matrices from corresponding diagonals of row vectors (transform into matrix)
         D1 = sp.diags(D1[0,:])
         D2 = sp.diags(D2[:,0])
 
@@ -100,10 +105,13 @@ class BorisGraphNet(nn.Module):
         adj_mtx = adj_mtx.dot(D1)
         adj_mtx = D2.dot(adj_mtx)
 
+        # Converting sparse matrix to numpy 2d array and then to tensor
         adj_mtx = sp.csr_matrix.toarray(adj_mtx)
         adj_mtx = torch.from_numpy(adj_mtx).float()
 
         #print(adj_mtx[:10, :10])
+
+        # Return extremely sparse input adjacency matrix
         return adj_mtx
 
 
