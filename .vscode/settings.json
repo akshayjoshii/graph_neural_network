@@ -1,3 +1,4 @@
 {
-    "jupyter.jupyterServerType": "local"
+    "jupyter.jupyterServerType": "local",
+    "python.pythonPath": "/home/joshi/akshay_venv/bin/python3.8"
 }

@@ -274,7 +274,8 @@ def main():
 # Driver program
 if __name__ == '__main__':
     main()
-    # Examples:
+    # Examples of all the available models:
+    
     # python fc_vs_graph_train.py --model fc
     # python fc_vs_graph_train.py --model conv
     # python fc_vs_graph_train.py --model gaussian_graph -> Originial implementation
